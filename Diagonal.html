@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diagonal</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script>
+    
+    
+    $(document).ready(function(){
+    $(".click").click(() => {
+    $("#container")
+      .removeClass("left")
+      .animate({ bottom: "0px", right: "0px" }, 3000);
+});
+  });
+</script>
+<style>
+    #container {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(87, 62, 226);
+    position: absolute;
+    border-radius: 5px;
+  }
+  
+  .left {
+    top: 0px;
+    left: 0px;
+  }
+  .click{
+   margin-left: 50%;
+   background-color: rgb(73, 61, 209);
+   color: aliceblue;
+   font-weight: bold;
+   height: 50px;
+   font-size: x-large;
+   box-shadow:5px 10px;
+   border-radius: 5px;
+   
+    
+  }
+
+</style>
+
+</head>
+<body>
+
+    <div id="container" class="left"></div>
+      <button class="click" >Click for Change</button>
+</body>
+</html>
